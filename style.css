@@ -102,9 +102,9 @@
 .price-list li {
     padding: 16px;
     margin: 0 30px;
-    color: #c0c0c0;
+    color: #000;
     border-bottom: 1px solid #e2e2e2;
-}
+  }
 
 .price-list li:last-child,
 .price-list li:nth-child(4) {
@@ -133,6 +133,7 @@
 
 .button-2 {
     font-weight: 700;
+    text-align: center;
     color: #fff;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,62,125,1) 0%, rgba(24,106,220,1) 100%); 
@@ -141,6 +142,44 @@
     text-decoration: none;
     display: block;
 }
+.button:hover {
+    color: var(--text-primary);
+}
+.iitem-icon-bgC {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    top: 2rem;
+    z-index: 1;
+    opacity: 0;
+    color: var(--background-color);
+    fill: var(--background-color);
+    stroke: transparent;
+    transition: opacity 0.2s 0.1s;
+  }
+  .overline 
+  {
+    text-decoration: line-through;;
+  }
+  .check-list {
+    list-style-type: none; /* Elimina el estilo por defecto de la lista */
+    padding-left: 0;
+}
+
+.check-list li {
+    position: relative;
+    padding-left: 20px; /* Ajusta este valor según sea necesario */
+}
+.colorIcon
+{ color: #186adc;
+}
+.check-list li::before {
+    content: '\2713'; /* Unicode del check */
+    position: absolute;
+    left: 0;
+    color: green; /* Cambia el color si es necesario */
+}
+
 @media(max-width:768px){
   .col {
     width: 100%;
