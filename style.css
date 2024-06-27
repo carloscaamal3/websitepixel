@@ -5,7 +5,14 @@
     text-align: center;
     font-size: 14px;
 }
-*/
+*/[aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  [aos="fade"].aos-animate {
+    opacity: 1;
+  }
 .colTable {
     float: left;
     width: 33.3%;
@@ -179,7 +186,9 @@
     left: 0;
     color: green; /* Cambia el color si es necesario */
 }
-
+html {
+    scroll-behavior: smooth;
+}
 @media(max-width:768px){
   .col {
     width: 100%;

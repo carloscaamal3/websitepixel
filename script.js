@@ -158,3 +158,9 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+//control de inicio de animacion de libreria fade 
+AOS.init();
+/*AOS.init({
+  duration: 1200,
+});*/
+
