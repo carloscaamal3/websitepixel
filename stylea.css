@@ -1,9 +1,9 @@
 /* $base-background: #00CC99; */
-.mainSection{
+/*.mainSectiona{
   height: 100vh;
   position: relative;
 }
-
+*/
 .text{
   text-align: center;
   font-size: 60px;
@@ -23,7 +23,7 @@
 }
 
 .container1 {
-  position: relative;
+  /*position: relative;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@ canvas {
   display: block;
   vertical-align: bottom;
   /*I can remove this to disable interactivty*/
-  position: absolute;
+  position: initial;
   z-index: 1;
 /*
   position: absolute;
